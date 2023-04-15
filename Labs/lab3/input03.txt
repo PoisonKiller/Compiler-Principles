@@ -1,0 +1,7 @@
+{
+    int testid;
+    if(i<j) 
+        if (i > j + 1) i=10;
+        else i=10;
+    else j=10;
+}
