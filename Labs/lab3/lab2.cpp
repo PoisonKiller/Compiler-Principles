@@ -70,19 +70,19 @@ type -> int float char
 
 follow集
 program -> $
-block -> $ }
-decls -> ID IF WHILE DO break { }
-decl -> ID IF WHILE DO break { }
-stmts -> ID IF WHILE DO break { }
-stmt -> ID IF WHILE DO break { }
-ElseStmt -> ID IF WHILE DO break { }
-bool -> = } 
-boolR ->  } $
-expr -> = } $ ;
-exprR ->  } $ ;
-term -> = ) + - < > <= >= == != ; IF WHILE DO break { } $
-termR -> = } $ ;
-factor -> = } ; $
+block -> $ } ID IF WHILE DO break {
+decls -> ID IF WHILE DO break { 
+decl -> ID IF WHILE DO break { int char float
+stmts -> } 
+stmt -> } ID IF WHILE DO break {
+ElseStmt -> ID IF WHILE DO break { 
+bool -> )
+boolR -> )
+expr -> ) ; < > <= >= == != 
+exprR -> ; < > <= >= == != 
+term -> + - ; < > <= >= == != 
+termR -> + - ; < > <= >= == != 
+factor -> * / + - ; < > <= >= == != 
 type -> ID
 
 */ 
